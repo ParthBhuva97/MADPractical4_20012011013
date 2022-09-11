@@ -19,14 +19,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonBrowse.setOnClickListener {
 //            Toast.makeText(this, "Browse Button Clicked", Toast.LENGTH_SHORT).show()
-            Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://uvpce.guni.ac.in")).apply {
+            Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://${binding.url.text.toString()}")).apply {
                 startActivity(this)
             }
         }
 
         binding.buttonCall.setOnClickListener {
 //            Toast.makeText(this, "Call Button Clicked", Toast.LENGTH_SHORT).show()
-            Intent(Intent.ACTION_DIAL).setData(Uri.parse("tel:1234567890")).apply {
+            Intent(Intent.ACTION_DIAL).setData(Uri.parse("tel:${binding.number.text.toString()}")).apply {
                 startActivity(this)
             }
         }

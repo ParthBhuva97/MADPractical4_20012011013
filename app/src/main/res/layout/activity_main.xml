@@ -23,16 +23,22 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/url"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textImeMultiLine"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_browse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Browse"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="25dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background"
         app:layout_constraintStart_toEndOf="@id/webUrl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -53,17 +59,22 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Call"
+        android:background="@drawable/btn_background"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="25dp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/call"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_browse"
@@ -90,11 +101,15 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contact"
+        android:background="@drawable/btn_background"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="25dp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/contact"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_call"
@@ -121,11 +136,15 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_callLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Call Log"
+        android:background="@drawable/btn_background"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="25dp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/callLog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_contact"
@@ -152,11 +171,15 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_gallery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gallary"
+        android:background="@drawable/btn_background"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="25dp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/gallery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_callLog"
@@ -183,11 +206,15 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Camera"
+        android:background="@drawable/btn_background"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="25dp"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/camera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_gallery"
@@ -214,12 +241,16 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_alarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Alarm"
-        app:layout_constraintStart_toEndOf="@id/camera"
+        android:background="@drawable/btn_background"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/alarm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_camera"
         app:layout_constraintBottom_toBottomOf="parent"
